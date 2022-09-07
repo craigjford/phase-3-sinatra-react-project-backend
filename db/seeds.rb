@@ -16,6 +16,13 @@ Vineyard.create(name: "Louis M. Martini Winery", address: "254 Saint Helena", ci
 Vineyard.create(name: "Hall St. Helena", address: "401 Saint Helena", city: "St. Helena", state: "California", image_url: "https://s3.amazonaws.com/winecountry-media/wp-content/uploads/sites/4/2021/04/07051135/hall-wines-st-helena-facebook-photo-1320x880-2.jpg")
 Vineyard.create(name: "Pine Ridge Vineyards", address: "5901 Silverado Trail", city: "Napa", state: "California", image_url: "https://s3.amazonaws.com/winecountry-media/wp-content/uploads/sites/4/2021/04/07133506/Pine-Ridge-Vineyards-Estate-property-ariel-view-1320x880-2.jpg")
 Vineyard.create(name: "Domaine Carneros", address: "1240 Duhig Road", city: "Napa", state: "California", image_url: "https://s3.amazonaws.com/winecountry-media/wp-content/uploads/sites/4/2019/02/26133823/blog-030519-napa-pic4.jpg")
+Vineyard.create(name: "Robert Mondavi Winery", address: "7801 Saint Helena", city: "St. Helena", state: "California", image_url: "https://s3.amazonaws.com/winecountry-media/wp-content/uploads/sites/4/2021/04/07060616/robert-mondavi-winery-napa-valley-1320x880a.jpg")
+Vineyard.create(name: "Idyllic Serenity", address: "1350 Acacia Drive", city: "Oakville", state: "California", image_url: "https://s3.amazonaws.com/winecountry-media/wp-content/uploads/sites/4/2019/02/27090016/far-niente-property-napa-valley-1320x880-2.jpg")
+Vineyard.create(name: "Mayacamas Vineyards & Winery", address: "1155 Lokoya Road", city: "Napa", state: "California", image_url: "https://s3.amazonaws.com/winecountry-media/wp-content/uploads/sites/4/2019/02/27090016/mayacamas-vineyards-the-meadow-1320x880-2.jpg")
+Vineyard.create(name: "Chateau Montelena Winery", address: "1429 Tubbs Lane", city: "Calistoga", state: "California", image_url: "https://s3.amazonaws.com/winecountry-media/wp-content/uploads/sites/4/2021/04/07050730/montelena-banner-2.jpg")
+
+
+
 
 puts "🌱 Seeding Wines..."
 
