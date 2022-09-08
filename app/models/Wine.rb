@@ -1,4 +1,4 @@
 class Wine < ActiveRecord::Base
-    belongs_to :vineyards
+    belongs_to :vineyard
     
 end
