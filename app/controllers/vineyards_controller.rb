@@ -14,10 +14,17 @@ class VineyardsController < ApplicationController
         end    
     end    
 
-    post 'vineyards' do
+    delete '/vineyards/:id' do
+        vineyard = Vineyard.find(params[:id])
+        vineyard.destroy
+        vineyard.to_json   
+    end  
+
+
+    post '/vineyards' do
         vineyard = Vineyard.create(name: params[:name], address: params[:address],
                 city: params[:city], state: params[:state], image_url: params[:image_url])
-         vineyards.to_json       
+         vineyard.to_json       
     end
 
 end
