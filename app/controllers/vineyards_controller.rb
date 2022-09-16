@@ -3,7 +3,7 @@ class VineyardsController < ApplicationController
     get '/vineyards' do
         vineyards = Vineyard.all
         vineyards.to_json(include: :wines)
-    end      
+    end    
 
     delete '/vineyards/:id' do
         vineyard = Vineyard.find(params[:id])
