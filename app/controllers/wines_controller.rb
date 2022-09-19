@@ -20,6 +20,12 @@ class WinesController < ApplicationController
         wine.to_json
     end
 
+    delete '/wines/:id' do
+        wine = Wine.find(params[:id])
+        wine.destroy
+        wine.to_json   
+    end
+
     # delete '/wines/:id' do
     #     wine = Wine.find_by(params[:id])
     #     wine.destroy
