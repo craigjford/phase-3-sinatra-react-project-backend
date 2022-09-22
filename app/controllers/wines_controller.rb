@@ -1,24 +1,20 @@
 class WinesController < ApplicationController
 
-    get '/wines' do
-        wines = Wine.all
-        wines.to_json
-    end 
 
-    post '/wines' do
-        wine = Wine.create(name: params[:name], price: params[:price],
-                vineyard_id: params[:vineyard_id], year: params[:year])
+    post '/vineyards/:vineyard_id/wines' do
+        vineyard = Vineyard.find(params[:vineyard_id])
+        wine = vineyard.wines.create(name: params[:name], price: params[:price],
+                 year: params[:year])
         wine.to_json
     end
 
     delete '/wines/:id' do
         wine = Wine.find(params[:id])
-        wine.destroy
-        wine.to_json   
+        wine.destroy 
     end
 
     patch '/wines/:id' do
-        wine = Wine.find_by(params[:id])
+        wine = Wine.find(params[:id])
         wine.update(name: params[:name], price: params[:price], year: params[:year])  
         wine.to_json
     end
