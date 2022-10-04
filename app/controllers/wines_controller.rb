@@ -1,6 +1,5 @@
 class WinesController < ApplicationController
 
-
     post '/vineyards/:vineyard_id/wines' do
         vineyard = Vineyard.find(params[:vineyard_id])
         wine = vineyard.wines.create(name: params[:name], price: params[:price],
